@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class MenuController {
 
 	@Autowired
-	private SelfMenuService selfMenuService;
+	private SelfMenuService SelfMenuService;
 
 	@GetMapping
 	public ModelAndView index() {
@@ -29,14 +29,14 @@ public class MenuController {
 	@GetMapping(produces = "application/json")
 	@ResponseBody
 	public SelfMenu data() {
-		return selfMenuService.findMenus();
+		return SelfMenuService.findMenus();
 	}
 
 	@PostMapping(produces = "application/json")
 	@ResponseBody
 	// @RequestBody表示把整个请求体转换为Java对象
 	public String save(@RequestBody SelfMenu menu) {
-		this.selfMenuService.save(menu);
+		this.SelfMenuService.save(menu);
 		return "保存成功";
 	}
 }
