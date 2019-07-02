@@ -1,7 +1,7 @@
 package subscribe;
 
-import org.fkjava.commons.service.TokenManager;
-import org.fkjava.weixin.SubscribeApplication;
+import lgx.gdkm.commons.service.TokenManager;
+import lgx.gdkm.weixin.SubscribeApplication;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
