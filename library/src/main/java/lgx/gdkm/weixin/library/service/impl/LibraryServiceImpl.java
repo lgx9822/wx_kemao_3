@@ -1,12 +1,12 @@
-package org.fkjava.weixin.library.service.impl;
+package lgx.gdkm.weixin.library.service.impl;
 
 import java.util.LinkedList;
 
-import org.fkjava.weixin.library.dao.BookRepository;
-import org.fkjava.weixin.library.domain.Book;
-import org.fkjava.weixin.library.domain.DebitItem;
-import org.fkjava.weixin.library.domain.DebitList;
-import org.fkjava.weixin.library.service.LibraryService;
+import lgx.gdkm.weixin.library.dao.BookRepository;
+import lgx.gdkm.weixin.library.domain.Book;
+import lgx.gdkm.weixin.library.domain.DebitItem;
+import lgx.gdkm.weixin.library.domain.DebitList;
+import lgx.gdkm.weixin.library.service.LibraryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
