@@ -20,9 +20,9 @@ import com.fasterxml.jackson.dataformat.xml.XmlMapper;
 
 // 实现ApplicationContextAware接口的目的：为了让当前对象能够得到Spring容器本身，能够通过Spring的容器来找到里面的Bean
 @SpringBootApplication
-@ComponentScan(basePackages = "org.fkjava")
-@EnableJpaRepositories(basePackages = "org.fkjava")
-@EntityScan(basePackages = "org.fkjava")
+@ComponentScan(basePackages = "lgx.gdkm")
+@EnableJpaRepositories(basePackages = "lgx.gdkm")
+@EntityScan(basePackages = "lgx.gdkm")
 public class UnSubscribeApplication implements ApplicationContextAware
 // 为了让非WEB应用能够一直等待信息的到来，必须实现CommandLineRunner接口
 		, EventListenerConfig {
